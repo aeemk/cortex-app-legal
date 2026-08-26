@@ -1,0 +1,73 @@
+metadata:
+  name: cortex-app-legal
+  display_name: Cortex App — Legal
+  class: owner
+owner: owner
+kind: website
+lifecycle: developing
+category: experiment
+revenue_model: none
+monetized: false
+cortex_link:
+- builds_with
+tech:
+- html
+repo: https://github.com/aeemk/cortex-app-legal.git
+tags:
+- cortex
+- legal
+collaborators:
+- name: ahmadkhaled87
+  role: lead
+promotion:
+  candidate: false
+  state: none
+  target: none
+source_path: /home/claude-bot/projects/owner/cortex-app-legal
+
+# --- product contract (specs/product-contract.md §3) ---
+# Synthesized by scripts/backfill-product-registry.py (§6.2, pass 2).
+# auth/i18n/telemetry are typed defaults, not sourced data — see this
+# product's registry row, day0_status.contract_partial_reason.
+product:
+  identity:
+    slug: cortex-app-legal
+    display_name: "Cortex App \u2014 Legal"
+    type: studio_app
+    org_id: default
+    owner: owner
+    lifecycle: developing
+    host: null
+  branding:
+    primary: '#4f46e5'
+    accent: ''
+    surface: '#ffffff'
+    logo: ''
+    icon: ''
+    font: {}
+  schema: product_contract/v1
+  auth:
+    providers:
+    - password
+    email_verification: optional
+    session_days: 14
+    mfa: optional
+  i18n:
+    default_locale: en
+    locales:
+    - en
+    rtl: []
+  telemetry:
+    analytics: {}
+    otel: {}
+    error_sink: cortex
+    consent_mode: explicit
+  scaling:
+    tier: S0
+    stateful: true
+    state_backends: []
+    autoscale: false
+    min_instances: 1
+    max_instances: 1
+    scale_signal: ''
+    budget_cap_usd: null
